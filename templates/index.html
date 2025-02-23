@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animals</title>
+</head>
+<body>
+<h1>Animals</h1>
+
+{% if animals %}
+{% for animal in animals %}
+<h1>Mavjud bolgan hayvonlarni ismlari</h1>
+<h2>{{ animal.name }}</h2>
+{% endfor %}
+{% else %}
+<h2>Hozirda hayvonlar mavjud emas</h2>
+{% endif %}
+
+</body>
+</html>
